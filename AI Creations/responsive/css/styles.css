@@ -1,3 +1,13 @@
+body a {
+    color: var(--gold);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+body a:hover {
+    color: #fff;
+}
+
 /* Responsive site base - colors and feel from adv_css */
 :root {
     --gold: #e6b35a;
@@ -156,8 +166,8 @@ hr {
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 8px;
+        flex-direction: row;
+        gap: 18px;
     }
 }
 
@@ -171,6 +181,7 @@ hr {
     }
 
     nav ul {
+        flex-direction: column;
         gap: 0;
     }
 
