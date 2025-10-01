@@ -1,0 +1,91 @@
+/* CGA Inspired Styles */
+/* Figma CGA Color Scheme */
+:root {
+    --cga-primary: #3a4a2b;
+    --cga-secondary: #f8f5f0;
+    --cga-accent: #bfa77a;
+    --cga-dark: #222;
+    --cga-gray: #7c8c5a;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: var(--cga-secondary);
+    color: var(--cga-dark);
+}
+
+.navbar {
+    border-bottom: 1px solid var(--cga-accent);
+    background: #fff;
+}
+
+.navbar-brand {
+    color: var(--cga-accent) !important;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: var(--cga-dark) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--cga-accent) !important;
+}
+
+.cga-hero {
+    background: linear-gradient(90deg, var(--cga-secondary) 0%, var(--cga-accent) 100%), url('../images/cga/golf/hero.jpg') center center/cover no-repeat;
+}
+
+.cga-hero h1 {
+    color: var(--cga-accent);
+}
+
+.cga-hero p {
+    color: var(--cga-gray);
+}
+
+.btn-primary {
+    background: var(--cga-accent);
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--cga-primary);
+    color: #fff;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.card-title {
+    color: var(--cga-accent);
+}
+
+.card-text {
+    color: var(--cga-gray);
+}
+
+footer {
+
+    /* Golf Images Section */
+    .golf-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .golf-card:hover {
+        transform: translateY(-6px) scale(1.03);
+        box-shadow: 0 8px 24px rgba(42, 106, 224, 0.12);
+    }
+
+    .golf-img {
+        height: 220px;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    background: #fff;
+    border-top: 1px solid var(--cga-accent);
+}
